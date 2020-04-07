@@ -1,1 +1,9 @@
 /* we'll add some basic style here */
+html {
+    font-family: Robota, Helvetica, sans-serif;
+    color: blue;
+}
+
+main {
+    color: pink;
+}
