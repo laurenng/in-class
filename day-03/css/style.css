@@ -2,12 +2,14 @@
 
 /* tag selector */
 h1 { 
-
+    font-family: Impact, sans-serif;
+    font-size: 3rem;
+    color: rgba(0,0,255,0.5)
 } /* applied to <h1> */
 
 /* class selector */
 .design-name { 
-
+    font-family: cursive;
 } /* applied to elements with `class="design-name"` */
 
 /* id selector */
@@ -16,48 +18,50 @@ h1 {
 } /* applied to the element with `id="zen-intro"` */
 
 /* group selector */
-.explanation .participation .benefits .requirements { 
-
+.explanation, .participation, .benefits, .requirements { 
+    border: 5px green solid;
 } /* applied to ANY .explanation OR .participation OR .benefits OR .requirements */
 
 /* combined selector */
-h3 .select { 
-
+h3.select { 
+    font-size: 5em;
+    color: pink;
 } /* applied to ONLY combination of <h3> AND .select */
 
 /* descendant selector */
 nav li { 
-
+    background-color: aqua;
 } /* applied ONLY to <li> INSIDE of <nav>
 
 /* child selector */
-div ul { 
-
+div > ul { 
+    background-color: pink;
 } /* applied to <ul> DIRECTLY INSIDE of <div>
 
 /* Immediately following selector */
-header div { 
-
+header + div { 
+    border: 3px purple solid;
 } /* applied to every element immediately after the first element */
 
 /* Preceded by selector */
-header div { 
-
+header ~ div { 
+    background-color: silver;;
 } /* applied to every element immediately preceded by the first element */
 
 /* Attribute selector */
-role { 
-
+[role] { 
+    font-family: monospace;
 } /* applied to every element with role attribute */
 
 /* Attribute value selector */
-role article { 
-
+[role=article] { 
+    font-size: 1.5em;
 } /* applied to every element with the value of article for the role attribute */
 
 /* Not selector */
 not p { 
-
+    font-size: 3em;
+    color: green;
 } /* applied to all elements that are not the indicated element */
 
 /* All selector */
@@ -67,12 +71,12 @@ not p {
 
 /* Pseudo-class selector */
 li:focus, li:hover { 
-
+    font-size: 3em;;
 } /* applied to element on focus or hover */
 
 /* Pseudo-class selector */
 nav li:first-child {
-
+    color:red;
 } /* applied to the <li> that is the first child of nav /*
 
 /* Pseudo-class selector */
@@ -93,18 +97,19 @@ li:nth-child(odd) {
 
 /* Pseudo-element selector */
 h1::first-letter {
-
+    font-size: 3em;
+    color: yellow;
 } /* applied the first letter of each <h1> element */
 
 /* Pseudo-class + pseudo-element selector */
 p:first-of-type::first-letter {
-
+    background-color: aqua;
 } /* applied to the first letter ONLY of <p> that 
 are the first of type <p> in their parent */
 
 /* pseudo-element selector */
-h1::after {
-
+p::after {
+    content: url(/smiley.gif);
 } /* applied before ANY <h2> element */ `
 
 /* Pseudo-element selector */
